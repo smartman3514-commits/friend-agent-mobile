@@ -25,7 +25,27 @@
     },
     "plugins": [
       "expo-router",
-      "expo-status-bar"
+      "expo-status-bar",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "일정표를 찍어 글자를 읽고 약속으로 만들기 위해 카메라를 사용합니다.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "일정표 사진을 골라 글자를 읽고 약속으로 만들기 위해 사진첩을 사용합니다.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "날씨와 미세먼지 지역을 지금 계신 도시로 맞추기 위해 위치를 사용합니다. 위치 좌표는 서버에 보내지 않습니다."
+        }
+      ]
     ],
     "scheme": "harufriend",
     "experiments": {
